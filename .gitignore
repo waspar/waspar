@@ -1,0 +1,10 @@
+.idea
+.nyc_output
+dist
+docs
+docs/dist
+node_modules
+npm-debug.log
+package.json
+coverage
+yarn.lock

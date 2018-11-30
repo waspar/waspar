@@ -1,4 +1,4 @@
-# Babel Starter Kit
+# Waspar Web Tools
 
 [![NPM version](http://img.shields.io/npm/v/waspar.svg?style=flat-square)](https://www.npmjs.com/package/waspar)
 [![NPM downloads](http://img.shields.io/npm/dm/waspar.svg?style=flat-square)](https://www.npmjs.com/package/waspar)

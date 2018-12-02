@@ -29,8 +29,3 @@
 
 Copyright © 2018 Belikov Oleg. This source code is licensed under the MIT license found in
 the [LICENSE.txt](https://github.com/waspar/waspar/blob/master/LICENSE.txt) file.
-The documentation to the project is licensed under the [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
-license.
-
----
-Made with ♥ by Belikov Oleg ([@waspar](https://twitter.com/waspar)) and [contributors](https://github.com/waspar/waspar/graphs/contributors)

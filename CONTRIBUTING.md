@@ -1,4 +1,4 @@
-## Contributing to Babel Starter Kit
+# Contributing to Babel Starter Kit
 
 ♥ [Waspar Web Tools](https://github.com/waspar/waspar) and want to get involved? Thanks!
 There are plenty of ways you can help!
@@ -11,7 +11,7 @@ managing and developing this open source project. In return, they should recipro
 addressing your issue or assessing patches and features.
 
 
-### Using the issue tracker
+## Using the issue tracker
 
 The [issue tracker](https://github.com/waspar/waspar/issues) is the preferred channel
 for [bug reports](#bugs), [features requests](#features) and [submitting pull requests](#pull-requests),
@@ -23,7 +23,7 @@ but please respect the following restrictions:
 
 
 <a name="bugs"></a>
-### Bug reports
+## Bug reports
 
 A bug is a _demonstrable problem_ that is caused by the code in the repository. Good bug reports are
 extremely helpful - thank you!

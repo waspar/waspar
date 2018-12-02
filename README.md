@@ -10,7 +10,7 @@
 > [ES2015](https://babeljs.io/docs/learn-es2015/) + via [Babel](https://babeljs.io/)
 
 
-### Features
+## Features
 
 &nbsp; &nbsp; ✓ Author your code, including tests, in [ES2015](https://babeljs.io/docs/learn-es2015/) + via [Babel](http://babeljs.io/)<br>
 &nbsp; &nbsp; ✓ Publish as CommonJS, ES2015 and UMD via [Rollup](http://rollupjs.org/)<br>
@@ -19,7 +19,7 @@
 &nbsp; &nbsp; ✓ Generate a homepage for your project with [Easystatic](https://easystatic.com) ([demo](http://www.kriasoft.com/babel-starter-kit/))<br>
 &nbsp; &nbsp; ✓ Cross-platform, minimum dependencies<br>
 
-### License
+## License
 
 Copyright © 2018 Belikov Oleg. This source code is licensed under the MIT license found in
 the [LICENSE.txt](https://github.com/waspar/waspar/blob/master/LICENSE.txt) file.

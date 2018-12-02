@@ -1,5 +1,5 @@
-const settings = require('./settings');
+const convertStringToDecimalNumber = require('./convertStringToDecimalNumber');
 
-module.exports = {
-	settings
+export default {
+	convertStringToDecimalNumber
 };

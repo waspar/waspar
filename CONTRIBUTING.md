@@ -1,4 +1,4 @@
-# Contributing to Babel Starter Kit
+# Contributing to Waspar Web Tools
 
 ♥ [Waspar Web Tools](https://github.com/waspar/waspar) and want to get involved? Thanks!
 There are plenty of ways you can help!

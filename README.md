@@ -6,19 +6,25 @@
 [![Coverage Status](https://img.shields.io/coveralls/kriasoft/babel-starter-kit.svg?style=flat-square)](https://coveralls.io/github/kriasoft/babel-starter-kit)
 [![Dependency Status](http://img.shields.io/david/dev/kriasoft/babel-starter-kit.svg?style=flat-square)](https://david-dm.org/kriasoft/babel-starter-kit#info=devDependencies)
 
-> Adventure Web Inventory
-> [ES2015](https://babeljs.io/docs/learn-es2015/) + via [Babel](https://babeljs.io/)
-
-
 ## Features
 
-&nbsp; &nbsp; ✓ Author your code, including tests, in [ES2015](https://babeljs.io/docs/learn-es2015/) + via [Babel](http://babeljs.io/)<br>
-&nbsp; &nbsp; ✓ Publish as CommonJS, ES2015 and UMD via [Rollup](http://rollupjs.org/)<br>
-&nbsp; &nbsp; ✓ Pre-configured unit tests with [Mocha](http://mochajs.org/), [Chai](http://chaijs.com/) and [Sinon](http://sinonjs.org/)<br>
-&nbsp; &nbsp; ✓ Pre-configured test coverage with [Istanbul](https://github.com/gotwarlost/istanbul) and [Coveralls](https://coveralls.io/)<br>
-&nbsp; &nbsp; ✓ Generate a homepage for your project with [Easystatic](https://easystatic.com) ([demo](http://www.kriasoft.com/babel-starter-kit/))<br>
-&nbsp; &nbsp; ✓ Cross-platform, minimum dependencies<br>
+* **ES6/ESNext** - Write _ES6_ code and _Babel_ will transpile it to ES5 for backwards compatibility
+* **Test** - _Mocha_ with _Istanbul_ coverage
+* **Lint** - Preconfigured _ESlint_ with _Airbnb_ config
+* **CI** - _TravisCI_ configuration setup
+* **Minify** - Built code will be minified for performance
 
+## Commands
+- `npm run clean` - Remove `lib/` directory
+- `npm test` - Run tests with linting and coverage results.
+- `npm test:only` - Run tests without linting or coverage.
+- `npm test:watch` - You can even re-run tests on file changes!
+- `npm test:prod` - Run tests with minified code.
+- `npm run test:examples` - Test written examples on pure JS for better understanding module usage.
+- `npm run lint` - Run ESlint with airbnb-config
+- `npm run cover` - Get coverage report for your code.
+- `npm run build` - Babel will transpile ES6 => ES5 and minify the code.
+- `npm run prepublish` - Hook for npm. Do all the checks before publishing your module.
 ## License
 
 Copyright © 2018 Belikov Oleg. This source code is licensed under the MIT license found in

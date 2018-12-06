@@ -1,0 +1,65 @@
+{
+	"private": true,
+	"name": "waspar",
+	"version": "0.0.1",
+	"description": "Adventure Web Inventory",
+	"homepage": "https://www.waspar.ru/waspar",
+	"repository": "https://github.com/waspar/waspar",
+	"author": "Belikov Oleg <waspar@bk.ru> (https://www.waspar.ru)",
+	"contributors": [
+		"Belikov Oleg <waspar@bk.ru>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"waspar",
+		"tools",
+		"converters"
+	],
+	"main": "index.js",
+	"jsnext:main": "index.es.js",
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		],
+		"plugins": [
+			"@babel/plugin-transform-runtime"
+		]
+	},
+	"eslintConfig": {
+		"parser": "babel-eslint",
+		"extends": "airbnb-base"
+	},
+	"dependencies": {
+		"@babel/runtime": "^7.0.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.0.0",
+		"@babel/core": "^7.0.0",
+		"@babel/node": "^7.0.0",
+		"@babel/plugin-transform-runtime": "^7.0.0",
+		"@babel/preset-env": "^7.0.0",
+		"@babel/register": "^7.0.0",
+		"babel-eslint": "^10.0.1",
+		"cross-env": "^5.2.0",
+		"chai": "^4.2.0",
+		"del": "^2.2.2",
+		"eslint": "^5.9.0",
+		"eslint-config-airbnb-base": "^13.1.0",
+		"eslint-plugin-import": "^2.2.0",
+		"fs": "0.0.1-security",
+		"mocha": "^5.2.0",
+		"rollup": "^0.67.3",
+		"rollup-plugin-babel": "^4.0.3",
+		"rollup-plugin-commonjs": "^9.2.0",
+		"rollup-plugin-node-resolve": "^3.4.0"
+	},
+	"scripts": {
+		"lint": "eslint src test tools",
+		"test": "mocha --require @babel/register",
+		"test:watch": "mocha --require @babel/register --reporter min --watch",
+		"test:cover": "nyc npm test",
+		"build": "node tools/build",
+		"build:lib": "cross-env BABEL_ENV=production babel src --out-dir lib",
+		"prepublish": "npm run build"
+	}
+}

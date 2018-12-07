@@ -3,8 +3,8 @@
 	"name": "waspar",
 	"version": "0.0.1",
 	"description": "Adventure Web Inventory",
-	"homepage": "https://www.waspar.ru/waspar",
-	"repository": "https://github.com/waspar/waspar",
+	"homepage": "https://www.waspar.ru/waspar-tools",
+	"repository": "https://github.com/waspar/waspar-tools",
 	"author": "Belikov Oleg <waspar@bk.ru> (https://www.waspar.ru)",
 	"contributors": [
 		"Belikov Oleg <waspar@bk.ru>"

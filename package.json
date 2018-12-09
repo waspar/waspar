@@ -1,6 +1,7 @@
 {
 	"private": true,
-	"name": "waspar",
+	"name": "waspar-tools",
+	"name:umd": "wsptools",
 	"version": "0.0.1",
 	"description": "Adventure Web Inventory",
 	"homepage": "https://www.waspar.ru/waspar-tools",
@@ -30,18 +31,21 @@
 		"extends": "airbnb-base"
 	},
 	"dependencies": {
-		"@babel/runtime": "^7.0.0"
+		"@babel/runtime": "^7.0.0",
+		"lodash": "^4.17.11"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.0.0",
 		"@babel/core": "^7.0.0",
 		"@babel/node": "^7.0.0",
+		"@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+		"@babel/plugin-syntax-object-rest-spread": "^7.2.0",
 		"@babel/plugin-transform-runtime": "^7.0.0",
 		"@babel/preset-env": "^7.0.0",
 		"@babel/register": "^7.0.0",
 		"babel-eslint": "^10.0.1",
-		"cross-env": "^5.2.0",
 		"chai": "^4.2.0",
+		"cross-env": "^5.2.0",
 		"del": "^2.2.2",
 		"eslint": "^5.9.0",
 		"eslint-config-airbnb-base": "^13.1.0",
@@ -51,15 +55,18 @@
 		"rollup": "^0.67.3",
 		"rollup-plugin-babel": "^4.0.3",
 		"rollup-plugin-commonjs": "^9.2.0",
-		"rollup-plugin-node-resolve": "^3.4.0"
+		"rollup-plugin-node-resolve": "^3.4.0",
+		"rollup-plugin-uglify": "^6.0.0"
 	},
 	"scripts": {
 		"lint": "eslint src test tools",
 		"test": "mocha --require @babel/register",
 		"test:watch": "mocha --require @babel/register --reporter min --watch",
 		"test:cover": "nyc npm test",
-		"build": "node tools/build",
+		"build": "node tools/rollup.build",
 		"build:lib": "cross-env BABEL_ENV=production babel src --out-dir lib",
-		"prepublish": "npm run build"
+		"prepublish": "npm run build",
+		"watch": "npm run watch:js",
+		"watch:js": "rollup --config tools/rollup.config.js --watch"
 	}
 }

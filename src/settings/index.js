@@ -1,5 +1,5 @@
-import convert_string_to_decimal_number from './convert_string_to_decimal_number';
+import convert_string_decimal from './convert_string_decimal';
 
 export default {
-	convert_string_to_decimal_number
+	convert_string_decimal
 };

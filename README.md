@@ -1,7 +1,7 @@
 # Waspar Web Tools
 
-[![NPM version](http://img.shields.io/npm/v/waspar.svg?style=flat-square)](https://www.npmjs.com/package/waspar)
-[![NPM downloads](http://img.shields.io/npm/dm/waspar.svg?style=flat-square)](https://www.npmjs.com/package/waspar)
+[![NPM version](http://img.shields.io/npm/v/waspar-tools.svg?style=flat-square)](https://www.npmjs.com/package/waspar)
+[![NPM downloads](http://img.shields.io/npm/dm/waspar-tools.svg?style=flat-square)](https://www.npmjs.com/package/waspar)
 [![Build Status](http://img.shields.io/travis/kriasoft/babel-starter-kit/master.svg?style=flat-square)](https://travis-ci.org/kriasoft/babel-starter-kit)
 [![Coverage Status](https://img.shields.io/coveralls/kriasoft/babel-starter-kit.svg?style=flat-square)](https://coveralls.io/github/kriasoft/babel-starter-kit)
 [![Dependency Status](http://img.shields.io/david/dev/kriasoft/babel-starter-kit.svg?style=flat-square)](https://david-dm.org/kriasoft/babel-starter-kit#info=devDependencies)
@@ -28,4 +28,4 @@
 ## License
 
 Copyright © 2018 Belikov Oleg. This source code is licensed under the MIT license found in
-the [LICENSE.txt](https://github.com/waspar/waspar/blob/master/LICENSE.txt) file.
+the [LICENSE.txt](https://github.com/waspar/waspar-tools/blob/master/LICENSE.txt) file.

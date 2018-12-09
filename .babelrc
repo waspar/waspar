@@ -5,6 +5,7 @@
 				"env"
 			],
 			"plugins": [
+				"external-helpers",
 				"add-module-exports"
 			]
 		},

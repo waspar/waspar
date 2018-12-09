@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Waspar Tools Demo</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+<body>
+
+<section class="ui main text container">
+	<h1 class="ui dividing header">Waspar Tools Demo</h1>
+	<h2>Converters</h2>
+	<p>Let's convert something to something :)</p>
+
+	<form class="ui form">
+		<h3>
+			<span class="ui olive empty circular label"></span> &nbsp;
+			string to decimal number
+		</h3>
+		<div class="convert-string-decimal-box">
+			<div class="two fields">
+				<div class="field">
+					<input type="text" value="Text 2527 %$# 030" class="convert-string-decimal" name="convert_string_to_decimal_number">
+				</div>
+				<div class="field">
+					<input type="text" value="" class="convert-string-decimal-result" name="convert_string_to_decimal_number_result">
+				</div>
+			</div>
+			<table class="ui celled table">
+				<thead>
+				<tr>
+					<th>From</th>
+					<th>To</th>
+					<th>Info</th>
+					<th>Options</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>5 | .5 | ,,5</td>
+					<td>5.00</td>
+					<td></td>
+					<td>&mdash;</td>
+				</tr>
+				<tr>
+					<td>-100</td>
+					<td>100.00</td>
+					<td>negative numbers support</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;&nbsp;-1500&nbsp;&nbsp;</td>
+					<td>1500.00</td>
+					<td>spaces, before or|and after</td>
+					<td>&mdash;</td>
+				</tr>
+				<tr>
+					<td>1 500.7 9</td>
+					<td>1500.79</td>
+					<td></td>
+					<td>&mdash;</td>
+				</tr>
+				<tr>
+					<td>4900,33</td>
+					<td>4900.33</td>
+					<td></td>
+					<td>&mdash;</td>
+				</tr>
+				<tr>
+					<td>ff 8房子59 00hf,87жя</td>
+					<td>85900.87</td>
+					<td>hardcore</td>
+					<td>&mdash;</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--
+			// 04900,33 => 4 900.33 - ведущий ноль
+			// 4 900,33 => 4 900.33
+			// 4900, => 4 900.00
+			// 4 5900, => 45 900.00
+			// 7 4900,57 => 74 900.57
+			// 74 900/?57 => 74 900.57 - любой десятичный спец-символ(ы) будет заменён на . (но не буквы и пробелы 45900g49 => 4 590 049)
+			// ff8ff5900hf => 85 900.00
+			// ff8f f5900hf,87j => 85 900.87
+			// ff8房子5900hf,87жя => 85 900.87
+			// 9444555 => 9 444 555.00
+		-->
+	</form>
+
+</section>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script type="text/javascript" src="../dist/index.umd.js"></script>
+<script type="text/javascript" src="js/pages/index.js"></script>
+</body>
+</html>

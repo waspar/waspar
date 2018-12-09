@@ -1,17 +1,21 @@
-import settings from './settings/convert_string_decimal';
+import settings from '../settings/convert/string_decimal';
 import _isString from 'lodash/isString';
+import _isObject from 'lodash/isObject';
 
 /**
  * Class representing a converter form string to decimal.
  */
-class convertStringToDecimalNumber {
+class Converter {
 
 	/**
 	 * Create a converter form string to decimal.
 	 * @constructor
 	 * @property {String} [value='0'] - string for convert
+	 * @property {Object} {} - settings options
 	 */
-	constructor(value = '0') {
+	constructor(value = '0', options = {}) {
+
+		this.value = null;
 
 		if (value) {
 			if (_isString(value)) {
@@ -19,7 +23,11 @@ class convertStringToDecimalNumber {
 			}
 		}
 
-		this.settings = settings;
+		if(options && _isObject(options)){
+			options = Object.assign(settings, options);
+		}
+
+		this.settings = options;
 	}
 
 	convert(options = {}, value = null) {
@@ -88,4 +96,4 @@ class convertStringToDecimalNumber {
 
 }
 
-export default convertStringToDecimalNumber;
+export default Converter;

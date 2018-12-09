@@ -1,22 +1,13 @@
 import {expect} from 'chai';
-import waspar from '../src/index';
-import convertStringToDecimalNumber from '../src/convertStringToDecimalNumber';
+import wps from '../src/index';
 
-describe('Waspar', () => {
+describe('Converters', () => {
 
-	describe('waspar.hello()', () => {
+	describe('#string to decimal number', () => {
 
-		it('should return welcome message for a guest user', () => {
-			const greeting = new convertStringToDecimalNumber();
-			console.log(greeting);
-			const message = greeting.hello();
-			expect(message).to.be.equal('Welcome!');
-		});
-
-		it('should return welcome message for a named user', () => {
-			const greeting = new convertStringToDecimalNumber('John');
-			const message = greeting.hello();
-			expect(message).to.be.equal('Welcome, John!');
+		it('should convert string `1` to decimal number `1`', () => {
+			const convert_string_decimal = new wps.convert.string.decimal('1');
+			expect(convert_string_decimal.convert()).to.be.equal(1);
 		});
 
 	});

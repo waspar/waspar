@@ -18,8 +18,8 @@ $(function () {
 		let value = $this.val();
 
 		if(value || value === 0){
-			let oConvert = new wsptools.convert.string.decimal(value);
-			$result.val(oConvert.convert());
+			// {'negative':true}
+			$result.val(wsptools.convert.string.decimal(value, {'negative':true}));
 		}else{
 			$result.val('');
 		}
